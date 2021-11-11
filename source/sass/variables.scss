@@ -1,0 +1,52 @@
+//Основные цвета
+$dark-grey: #1b2d37;
+$white: #ffffff;
+$grey: #788891;
+$blue: #00b2ff;
+$light-blue: #19baff;
+$light-grey: #ebebeb;
+$dark-grey-text: #666666;
+$black-background: #1b2d37;
+$black: #000000;
+$grey-border: rgba(98, 105, 98, 0.2);
+$popup-background: rgba(0, 0, 0, 0.5);
+
+
+//Шрифт
+$roboto: "Roboto", "Arial", sans-serif;
+$roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$pt-mono: "PT Mono", "Arial", serif;
+
+//Ретина
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+//Контейнеры
+@mixin container-desktop-wide() {
+  padding: 0 25px;
+  max-width: 1461px;
+  width: 100%;
+}
+
+@mixin container-desktop-tight() {
+  padding: 0 25px;
+  max-width: 1220px;
+  width: 100%;
+}
+
+@mixin container-mobile() {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+//стилизация ссылок
+@mixin link-click() {
+  a:hover {
+    opacity: 0.8;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+}

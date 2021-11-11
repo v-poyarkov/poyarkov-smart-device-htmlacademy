@@ -1,0 +1,119 @@
+.about {
+  @include container-desktop-tight;
+  padding-left: 205px;
+  color: $dark-grey-text;
+  position: relative;
+  margin-bottom: 110px;
+
+  h2 {
+    margin: 0;
+    font-family: $roboto-condensed;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 317px;
+      left: -210px;
+      background-image: url("../img/2005@1x.png");
+      background-size: 220px 317px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/2005@2x.png");
+      }
+    }
+  }
+
+  p {
+    font-family: $pt-mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 20px 0;
+
+    .about__tablet {
+      display: none;
+    }
+  }
+}
+
+.about__button {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: $blue;
+  border: 1px solid $blue;
+  display: block;
+  width: 180px;
+  height: 45px;
+  box-sizing: border-box;
+  margin-top: 40px;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about {
+    padding-left: 212px;
+    margin-bottom: 85px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 45px;
+
+      &::before {
+        background-image: url("../img/2005-tablet@1x.png");
+        height: 362px;
+        width: 251px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    p {
+      margin: 23px 0;
+
+      .about__tablet {
+        display: inline;
+        font-size: inherit;
+      }
+
+      .about__desktop {
+        font-size: 0;
+      }
+    }
+  }
+
+  .about__button {
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    @include container-mobile;
+    margin-bottom: 65px;
+
+    h2 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    p {
+      margin-top: 22px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .about__button {
+    margin-top: -13px;
+  }
+}
