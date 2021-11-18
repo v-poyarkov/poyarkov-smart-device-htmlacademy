@@ -1,6 +1,6 @@
 {
   "name": "Smart-Device",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -25,7 +25,6 @@
     "eslint-config-htmlacademy": "0.4.x"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "build": "gulp build",
@@ -46,10 +45,11 @@
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
-  "engines": {
-    "node": "8.15"
+   "engines": {
+      "node": ">6.9.4",
+      "npm": ">4.2.0"
   },
   "dependencies": {
     "del": "^4.1.1"
   }
-}
+ }
