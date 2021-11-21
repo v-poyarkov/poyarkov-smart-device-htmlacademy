@@ -61,8 +61,8 @@
   }
 }
 
-.promo__button,
-.promo__button--mobile {
+.promo__button
+ {
   box-sizing: border-box;
   display: inline-block;
   height: 55px;
@@ -70,12 +70,11 @@
   font-size: 16px;
   line-height: 35px;
   letter-spacing: 0.05em;
-  width: 407px; // временно
+  width: 407px;
   margin-left: 92px;
 }
-
-.promo__button--mobile {
-  display: none;
+.promo__button:before {
+  content: "Получить бесплатную консультацию";
 }
 
 .promo__image {
@@ -98,8 +97,7 @@
   .promo {
     min-height: 585px;
     padding-top: 76px;
-    // background-color: $dark-grey;
-
+ 
     h2 {
       font-size: 60px;
       line-height: 70px;
@@ -191,13 +189,12 @@
   }
 
   .promo__button {
-    display: none;
-  }
-
-  .promo__button--mobile {
     margin: 0 auto;
     display: block;
     max-width: 450px;
     width: 100%;
+  }
+  .promo__button:before {
+    content: "Бесплатная консультация";
   }
 }

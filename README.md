@@ -1,2 +1,26 @@
-# poyarkov-smart-device-htmlacademy
+# Печатные платы. Smart-Device. HTMLAcademy.
  
+* Выполнил: Поярков Владимир
+
+**Обратите внимание, что папка с исходными файлами — `source/`.**
+
+_Не удаляйте и не обращайте внимание на файлы:_<br>
+_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+
+---
+
+#Инструкция по работе с проектом
+
+## Для начала работы должен быть установлен:
+* Node.js v.12.18.2 +
+* Gulp v4.x
+* npm last version
+
+## Основные команды для работы
+* Установка - `npm install`
+* Запуск локального сервера - `npm start`
+* Сборка проекта без запуска локального сервера - `npm run build`
+
+
+## Вся разработка ведется в директории `source`
+## Итоговый код попадает в директорию `build`
