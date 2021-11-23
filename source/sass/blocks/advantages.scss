@@ -44,10 +44,8 @@
   svg {
     position: absolute;
     top: 40px;
-
-    path {
-      fill: $blue;
-    }
+    fill: $blue;
+ 
 
   }
 
@@ -78,10 +76,8 @@
   }
 
   svg {
-    path {
-      fill: $white;
-    }
-  }
+          fill: $white;
+   }
 }
 
 @media (max-width: 1023px) {
